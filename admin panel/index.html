@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Admin panel</title>
+</head>
+<body>
+    <!-- header -->
+   <header>
+    <!-- header-left -->
+       <div class="header-left">
+       <!-- sidebar-icon  -->
+           <i onclick=showSidebar() class="fa fa-bars" ></i>
+       <!-- heading -->
+           <p>COMPLAINT MANAGEMENT SYSTEM</p>
+       </div>
+       <!-- header-right -->
+       <div class="header-right">
+           <p >Logout</p>
+           <i class="fa-solid fa-right-from-bracket" class="log-out"></i>
+       </div>
+</header>
+<!-- sidebar-div  -->
+<div class="main-div">
+   <!-- sidebar -->
+   <div class="sidebar-div">
+       <ul class="side-bar" id="sidebar">
+           <li class="profile">
+               <div>
+                   <img src="assets/j.jpg" alt="" class="profile-pic">
+                   <p> John Smith</p>
+               </div>
+           </li>
+           <li>
+               <i class="fa-solid fa-gauge"></i>
+               <a href="Dashboard">Dashboard</a>
+           </li>
+          <li>
+           <i class="fa-solid fa-gears"></i>
+              <a href="Account-Setting">Account Setting</a>
+          </li>
+          <li>
+              <i class="fa-solid fa-book"></i>
+              <a href="Lodge-Complaint">Lodge Complaint</a>
+          </li>
+          <li>
+               <i class="fa-solid fa-bars-progress"></i>
+              <a href="Complaint-History">Complaint History</a>
+          </li>
+      </ul>
+   </div>
+   <!-- profile-info section -->
+   <div class="profile-info">
+       <div class="profile-div">
+           <i class="fa fa-chevron-right"></i>
+           <p>Profile Info</p>
+       </div>
+       <!-- form section -->
+       <div class="form-section">
+           <!-- first-row  -->
+               <div class="first-row">
+                   <i class="fa fa-user"></i>
+                   <p class="first-row-text">John Smith's Profile</p>
+               </div>
+           <!-- sec-row  -->
+               <div class="sec-row">
+                   <p class="sec-row-text">last updated at : </p>
+                   <p class="date"> 2020-05-08 22:16:22</p>
+               </div>
+           <!-- form-->
+           <div class="form">
+               <form action="">
+                   <table>
+                       <!-- first-row-of-form -->
+                       <tr>
+                           <td>
+                                   <label for="full-name">Full name</label>
+                                   <input type="text" id="full-name" name="full-name" value="" placeholder="Username" required>
+                           </td>
+                           <td>
+                                   <label for="user-email"> Email</label>
+                                   <input type="email" id="user-email" name="user-email" value="" placeholder=" Enter email" required>
+                           </td>
+                       </tr>
+                       <!-- sec-row-of-form -->
+                       <tr>
+                           <td>
+                                   <label for="contact">Contact</label>
+                                   <input type="text" id="contact" name="contact" value="" placeholder="03XX-XXXXXXX" required>
+                           </td>
+                           <td>
+                                   <label for="reg-date">Reg:date</label>
+                                   <input type="datetime-local" id="reg-date" name="reg-date" value="" required>
+                           </td>
+                       </tr>
+                       <!-- third-row-of-form -->
+                       <tr>
+                           <td>
+                                   <label for="state">State</label>
+                                   <select name="state" id="state" >
+                                       <option value="Sindh">Sindh</option>
+                                       <option value="Kpk">Kpk</option>
+                                       <option value="Balochistan">Balochistan</option>
+                                       <option value="Punjab">Punjab</option>
+                                   </select>
+                           </td>
+                           <td>
+                                   <label for="Country">Country</label>
+                                   <select name="state" id="state">
+                                       <option value="Pakistan">Sindh</option>
+                                       <option value="China">Kpk</option>
+                                       <option value="India">Balochistan</option>
+                                       <option value="Afghanistan">Punjab</option>
+                                   </select>
+                           </td>
+                       </tr>
+                       <!-- fourth-row-of-form -->
+                       <tr>
+                           <td>
+                                   <label for="pincode">Pincode</label>
+                                   <input type="tel" id="pincode" name="pincode" value="" placeholder="XXXXXX">
+                           </td>
+                           <td>
+                                   <label for="Address">Address</label>
+                                   <textarea name="Address" id="Address" placeholder="xyz" ></textarea>
+                              
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <input class="submit-input" type="submit" value="Submit">
+                           </td>
+                           <td>
+                           </td>
+                       </tr>
+                   </table>
+               </form>
+           </div>
+
+       </div>
+   </div>
+</div>
+<!-- footer  -->
+<footer>
+<div class="copy-write"> 
+   &copy; 2022 CMS All rights reserved.
+</div>
+<div class="footer-icon">
+   <i class="fa fa-chevron-up"></i>
+</div>
+</footer>
+        <!-- js -->
+        <script src="js/script.js"></script>
+</body>
+</html>
